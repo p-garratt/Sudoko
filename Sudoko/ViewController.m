@@ -60,6 +60,7 @@
         winLabel.text = @"You Won!!";
         winLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:60];
         winLabel.backgroundColor = [UIColor redColor];
+        winLabel.textAlignment = NSTextAlignmentCenter;
         [self.view addSubview:winLabel];
     }
 }

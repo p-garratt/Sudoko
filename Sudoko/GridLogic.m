@@ -57,7 +57,7 @@
 }
 
 -(BOOL) checkBlockConsistent: (int) row andCol: (int) col andNumber: (int) newNum{
-    int leftTopCorner = (row%3)*9 +col%3*3;
+    int leftTopCorner = floorf(row/3)*27 + floorf(col/3)*3;
     NSLog(@"corner: %i", leftTopCorner);
     int currentLoc = leftTopCorner;
     for (int i=0; i<3; i++) {
@@ -68,7 +68,7 @@
             }
             currentLoc++;
         }
-        currentLoc +=9;
+        currentLoc +=6;
     }
     return YES;
 }
