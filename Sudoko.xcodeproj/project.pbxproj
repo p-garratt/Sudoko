@@ -13,8 +13,6 @@
 		0AE2FBA51798737B00F553AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2FBA31798737B00F553AB /* InfoPlist.strings */; };
 		0AE2FBA71798737B00F553AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2FBA61798737B00F553AB /* main.m */; };
 		0AE2FBAB1798737B00F553AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2FBAA1798737B00F553AB /* AppDelegate.m */; };
-		0AE2FBAD1798737B00F553AB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2FBAC1798737B00F553AB /* Default.png */; };
-		0AE2FBAF1798737B00F553AB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2FBAE1798737B00F553AB /* Default@2x.png */; };
 		0AE2FBB11798737B00F553AB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2FBB01798737B00F553AB /* Default-568h@2x.png */; };
 		0AE2FBB41798737B00F553AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2FBB31798737B00F553AB /* ViewController.m */; };
 		0AE2FBB71798737B00F553AB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2FBB51798737B00F553AB /* ViewController.xib */; };
@@ -25,8 +23,10 @@
 		0AE2FBCB179889B300F553AB /* NumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2FBCA179889B300F553AB /* NumCell.m */; };
 		0AE2FBCF17989BF800F553AB /* GridGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2FBCE17989BF800F553AB /* GridGenerator.m */; };
 		0AE2FBD21798B38700F553AB /* GridLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2FBD11798B38700F553AB /* GridLogic.m */; };
-		3C48E1CA1799122E004DD539 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C48E1C91799122E004DD539 /* Default-Portrait~ipad.png */; };
-		3C48E1CC1799124C004DD539 /* splashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C48E1CB1799124C004DD539 /* splashScreen.png */; };
+		0AF203B1179DABF000F8B413 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF203B0179DABF000F8B413 /* Default-Portrait~ipad.png */; };
+		0AF203B4179DAC8600F8B413 /* SudokuGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF203B3179DAC8600F8B413 /* SudokuGenerator.m */; };
+		0AF203B7179DE01400F8B413 /* UserLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF203B6179DE01400F8B413 /* UserLayer.m */; };
+		0AFDFBAD179F3B1F007FAD2A /* Solver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFBAC179F3B1F007FAD2A /* Solver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,8 +59,13 @@
 		0AE2FBCE17989BF800F553AB /* GridGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridGenerator.m; sourceTree = "<group>"; };
 		0AE2FBD01798B38700F553AB /* GridLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridLogic.h; sourceTree = "<group>"; };
 		0AE2FBD11798B38700F553AB /* GridLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridLogic.m; sourceTree = "<group>"; };
-		3C48E1C91799122E004DD539 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		3C48E1CB1799124C004DD539 /* splashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splashScreen.png; path = ../../../Desktop/splashScreen.png; sourceTree = "<group>"; };
+		0AF203B0179DABF000F8B413 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		0AF203B2179DAC8600F8B413 /* SudokuGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuGenerator.h; sourceTree = "<group>"; };
+		0AF203B3179DAC8600F8B413 /* SudokuGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuGenerator.m; sourceTree = "<group>"; };
+		0AF203B5179DE01400F8B413 /* UserLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLayer.h; sourceTree = "<group>"; };
+		0AF203B6179DE01400F8B413 /* UserLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLayer.m; sourceTree = "<group>"; };
+		0AFDFBAB179F3B1F007FAD2A /* Solver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solver.h; sourceTree = "<group>"; };
+		0AFDFBAC179F3B1F007FAD2A /* Solver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Solver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +85,7 @@
 		0AE2FB8E1798737B00F553AB = {
 			isa = PBXGroup;
 			children = (
-				3C48E1C91799122E004DD539 /* Default-Portrait~ipad.png */,
+				0AF203B0179DABF000F8B413 /* Default-Portrait~ipad.png */,
 				0AE2FBA01798737B00F553AB /* Sudoko */,
 				0AE2FB991798737B00F553AB /* Frameworks */,
 				0AE2FB981798737B00F553AB /* Products */,
@@ -131,7 +136,6 @@
 				0AE2FBAC1798737B00F553AB /* Default.png */,
 				0AE2FBAE1798737B00F553AB /* Default@2x.png */,
 				0AE2FBB01798737B00F553AB /* Default-568h@2x.png */,
-				3C48E1CB1799124C004DD539 /* splashScreen.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,6 +151,8 @@
 				0AE2FBC7179889AB00F553AB /* NumPad.m */,
 				0AE2FBC9179889B300F553AB /* NumCell.h */,
 				0AE2FBCA179889B300F553AB /* NumCell.m */,
+				0AF203B5179DE01400F8B413 /* UserLayer.h */,
+				0AF203B6179DE01400F8B413 /* UserLayer.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -156,6 +162,10 @@
 			children = (
 				0AE2FBCD17989BF800F553AB /* GridGenerator.h */,
 				0AE2FBCE17989BF800F553AB /* GridGenerator.m */,
+				0AF203B2179DAC8600F8B413 /* SudokuGenerator.h */,
+				0AF203B3179DAC8600F8B413 /* SudokuGenerator.m */,
+				0AFDFBAB179F3B1F007FAD2A /* Solver.h */,
+				0AFDFBAC179F3B1F007FAD2A /* Solver.m */,
 				0AE2FBD01798B38700F553AB /* GridLogic.h */,
 				0AE2FBD11798B38700F553AB /* GridLogic.m */,
 			);
@@ -214,13 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE2FBA51798737B00F553AB /* InfoPlist.strings in Resources */,
-				0AE2FBAD1798737B00F553AB /* Default.png in Resources */,
-				0AE2FBAF1798737B00F553AB /* Default@2x.png in Resources */,
 				0AE2FBB11798737B00F553AB /* Default-568h@2x.png in Resources */,
 				0AE2FBB71798737B00F553AB /* ViewController.xib in Resources */,
 				0AE2FBC5179877FF00F553AB /* test.txt in Resources */,
-				3C48E1CA1799122E004DD539 /* Default-Portrait~ipad.png in Resources */,
-				3C48E1CC1799124C004DD539 /* splashScreen.png in Resources */,
+				0AF203B1179DABF000F8B413 /* Default-Portrait~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +247,9 @@
 				0AE2FBCB179889B300F553AB /* NumCell.m in Sources */,
 				0AE2FBCF17989BF800F553AB /* GridGenerator.m in Sources */,
 				0AE2FBD21798B38700F553AB /* GridLogic.m in Sources */,
+				0AF203B4179DAC8600F8B413 /* SudokuGenerator.m in Sources */,
+				0AF203B7179DE01400F8B413 /* UserLayer.m in Sources */,
+				0AFDFBAD179F3B1F007FAD2A /* Solver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

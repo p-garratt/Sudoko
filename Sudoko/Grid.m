@@ -83,9 +83,20 @@
 }
 
 //Passes through any changes to a cell label
--(void) setCell: (int) cellNum withInt: (int) newNum{
+-(void) setCell: (int) cellNum withInt: (int) newNum andCorrect: (BOOL) correct{
     GridCell* temp = cells[cellNum];
-    [temp setLabel:newNum];
+    if (newNum ==0) 
+        [temp setLabel:0];
+    else
+        [temp setLabel:newNum andCorrect:correct];
+}
+
+-(void)clearAll{
+    for (GridCell* cell in cells) {
+        if (!cell.initial) {
+            [cell setLabel: 0];
+        }
+    }
 }
 
 @end

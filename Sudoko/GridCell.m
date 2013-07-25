@@ -9,7 +9,6 @@
 #import "GridCell.h"
 
 @implementation GridCell{
-    BOOL initial;
     UILabel* numDisplay;
     id target;
     SEL selector;
@@ -19,7 +18,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        initial = initialTerm;
+        self.initial = initialTerm;
         self.backgroundColor = [UIColor whiteColor];
         CGRect labelSize = CGRectMake(0, 0, frame.size.width, frame.size.height+1);
         numDisplay = [[UILabel alloc] initWithFrame:labelSize];
@@ -32,17 +31,27 @@
 
 //If the cell is an initial cell, a touch does nothing, otherwise selector is performed
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    if (!initial) {
+    if (!self.initial) {
         [target performSelector:selector withObject:[NSNumber numberWithInt: self.cellNum]];
     }
 }
 
-//controls label
+//controls label for the initial values
 -(void) setLabel: (int) newNum{
-    if (initial)
-        numDisplay.font = [UIFont fontWithName:@"Helvetica-Bold" size:24];
+    numDisplay.font = [UIFont fontWithName:@"Helvetica-Bold" size:24];
+    numDisplay.text = [NSString stringWithFormat:@"%i", newNum];
+    if (newNum==0) {
+        numDisplay.text = [NSString stringWithFormat:@""];
+    }
+}
+
+-(void) setLabel:(int)newNum andCorrect: (BOOL) correct{
+    numDisplay.font = [UIFont fontWithName:@"Helvetica" size:20];
+    if (correct) 
+        numDisplay.textColor = [UIColor blackColor];
     else
-        numDisplay.font = [UIFont fontWithName:@"Helvetica" size:20];
+        numDisplay.textColor = [UIColor redColor];
+    
     numDisplay.text = [NSString stringWithFormat:@"%i", newNum];
 }
 

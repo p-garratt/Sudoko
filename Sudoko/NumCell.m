@@ -15,7 +15,7 @@
 }
 
 
-- (id)initWithFrame:(CGRect)frame andNum: (int) num
+- (id)initWithFrame:(CGRect)frame andNum: (int) num andText: (NSString*) text
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -24,7 +24,7 @@
         self.highlighted = NO;
         CGRect labelSize = CGRectMake(0, 0, frame.size.width, frame.size.height+1);
         numDisplay = [[UILabel alloc] initWithFrame:labelSize];
-        numDisplay.text = [NSString stringWithFormat:@"%i", self.num];
+        numDisplay.text = [NSString stringWithFormat:text];
         numDisplay.textAlignment = NSTextAlignmentCenter;
         numDisplay.font = [UIFont fontWithName:@"Helvetica" size:36];
         [self addSubview:numDisplay];

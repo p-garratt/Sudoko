@@ -12,6 +12,7 @@
 
 -(id)initWithFrame:(CGRect)frame andArray: (NSArray*) theGrid;
 -(void) addTarget: (id) targ action:(SEL)action;
--(void) setCell: (int) cellNum withInt: (int) newNum;
+-(void) setCell: (int) cellNum withInt: (int) newNum andCorrect: (BOOL) correct;
+-(void) clearAll;
 
 @end

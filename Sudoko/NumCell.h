@@ -13,7 +13,7 @@
 @property(nonatomic, assign) BOOL highlighted;
 @property(nonatomic) int num;
 
--(id)initWithFrame:(CGRect)frame andNum: (int) num;
+-(id)initWithFrame:(CGRect)frame andNum: (int) num andText: (NSString*) text;
 -(void) setTarget: (id) targ action: (SEL) select;
 
 @end
